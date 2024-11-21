@@ -1,4 +1,4 @@
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/rpgevaeq3bs9/repositories/curota/curota-ai
+    - export DEPLOYPATH=/home/rpgevaeq3bs9/repositories/curota-ai
     - /bin/cp index.html $DEPLOYPATH
