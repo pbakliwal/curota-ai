@@ -474,6 +474,11 @@ body {
       width: 100%;
     }
   }
+  @media (max-width: 1024px) {
+    .right-column{
+      flex-direction: row;
+    }
+  }
 }
 
 /*cre-pit*/
@@ -984,12 +989,22 @@ body {
       justify-content: space-around;
       margin-bottom: 40px;
     }
+    
+  }
+  @media(max-width: 1024px) {
+    .features-container{
+      justify-content: space-evenly;
+    }
   }
 }
 
 /*metrics-container*/
 .metric-container-1 {
   margin: 96px 164px;
+
+  @media(max-width:1024px) {
+    margin: 40px;
+  }
 
   .metrics-container {
     justify-content: flex-end;
@@ -1208,6 +1223,12 @@ body {
     .footer-background {
       max-width: 100%;
       padding: 100px 20px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .footer-background {
+      padding: 40px;
     }
   }
 
