@@ -6,7 +6,6 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: fontsprnig, -apple-system, Roboto, Helvetica, sans-serif;
 }
 
 * {
@@ -291,7 +290,7 @@ body {
     align-self: stretch;
     color: #000;
     margin: auto 0;
-    font: 400 18px;
+    font: 400 18px Helvetica Neue, sans-serif;
   }
 
   @media (max-width: 991px) {
