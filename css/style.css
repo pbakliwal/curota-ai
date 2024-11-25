@@ -6,6 +6,7 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: fontsprnig, -apple-system, Roboto, Helvetica, sans-serif;
 }
 
 * {
@@ -290,7 +291,7 @@ body {
     align-self: stretch;
     color: #000;
     margin: auto 0;
-    font: 400 18px Helvetica Neue, sans-serif;
+    font: 400 18px;
   }
 
   @media (max-width: 991px) {
@@ -1773,3 +1774,13 @@ body {
           stroke-dashoffset: 100;
       }
   }
+
+  /*sticky nav bar*/
+  .sticky {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    background-color: #203e40;
+}

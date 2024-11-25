@@ -29,3 +29,14 @@ document.getElementById('emailForm').addEventListener('submit', function (event)
         },
       );
 });
+
+let menu = document.getElementById('menu');
+let offset = menu.offsetHeight;
+
+window.onscroll = function() {
+    if (window.scrollY > offset-10) {
+        menu.classList.add("sticky");
+    } else if(window.scrollY < offset-20) {
+        menu.classList.remove("sticky");
+    }
+}
