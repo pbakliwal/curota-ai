@@ -40,3 +40,71 @@ window.onscroll = function() {
         menu.classList.remove("sticky");
     }
 }
+
+/* carousel js*/
+document.addEventListener('DOMContentLoaded', function() {
+  const container = document.querySelector('.carousel-container');
+  const items = document.querySelectorAll('.annotation-item');
+  const prevBtn = document.querySelector('.carousel-button.prev');
+  const nextBtn = document.querySelector('.carousel-button.next');
+  const indicators = document.querySelector('.carousel-indicators');
+  let currentIndex = 0;
+
+  function createIndicators() {
+    items.forEach((_, index) => {
+      const button = document.createElement('button');
+      button.classList.add('indicator');
+      button.setAttribute('role', 'tab');
+      button.setAttribute('aria-label', `Slide ${index + 1}`);
+      button.onclick = () => goToSlide(index);
+      indicators.appendChild(button);
+    });
+    updateIndicators();
+  }
+
+  function updateIndicators() {
+    const dots = document.querySelectorAll('.indicator');
+    dots.forEach((dot, index) => {
+      dot.classList.toggle('active', index === currentIndex);
+      dot.setAttribute('aria-selected', index === currentIndex);
+    });
+  }
+
+  function goToSlide(index) {
+    currentIndex = index;
+    const offset = items[index].offsetLeft;
+    container.scrollTo({
+      left: offset,
+      behavior: 'smooth'
+    });
+    updateIndicators();
+  }
+
+  prevBtn.onclick = () => {
+    currentIndex = (currentIndex - 1 + items.length) % items.length;
+    goToSlide(currentIndex);
+  };
+
+  nextBtn.onclick = () => {
+    currentIndex = (currentIndex + 1) % items.length;
+    goToSlide(currentIndex);
+  };
+
+  container.addEventListener('scroll', () => {
+    const index = Math.round(container.scrollLeft / container.offsetWidth);
+    if (currentIndex !== index) {
+      currentIndex = index;
+      updateIndicators();
+    }
+  });
+
+  createIndicators();
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowLeft') {
+      prevBtn.click();
+    } else if (e.key === 'ArrowRight') {
+      nextBtn.click();
+    }
+  });
+});

@@ -1,5 +1,5 @@
 @font-face {
-  font-family: fontsprnig;
+  font-family: fontspring;
   src: url(/fonts/Fontspring-DEMO-allroundgothic-demi.otf);
 }
 
@@ -327,7 +327,7 @@ body {
 
   .main-heading {
     margin-top: 19px;
-    font: 600 48px fontsprnig, -apple-system, Roboto, Helvetica, sans-serif;
+    font: 600 48px fontspring, -apple-system, Roboto, Helvetica, sans-serif;
   }
 
   @media (max-width: 991px) {
@@ -559,7 +559,7 @@ body {
   }
 
   .main-heading {
-    font: 600 48px/1 "fontsprnig", -apple-system, Roboto, Helvetica, sans-serif;
+    font: 600 48px/1 "fontspring", -apple-system, Roboto, Helvetica, sans-serif;
     color: #cfebe7;
   }
 
@@ -791,7 +791,7 @@ body {
   }
 
   .welcome-text {
-    font-family: "fontsprnig", -apple-system, Roboto, Helvetica, sans-serif;
+    font-family: "fontspring", -apple-system, Roboto, Helvetica, sans-serif;
     align-self: stretch;
     margin: auto 0;
   }
@@ -898,7 +898,7 @@ body {
   .feature-title {
     color: #203e40;
     align-self: stretch;
-    font: 600 32px "fontsprnig", -apple-system, Roboto, Helvetica, sans-serif;
+    font: 600 32px "fontspring", -apple-system, Roboto, Helvetica, sans-serif;
   }
 
   .feature-icon {
@@ -1054,7 +1054,7 @@ body {
   
   .metrics-title {
     color: #203E40;
-    font: 600 66px/1 "fontsprnig", -apple-system, Roboto, Helvetica, sans-serif;
+    font: 600 66px/1 "fontspring", -apple-system, Roboto, Helvetica, sans-serif;
     min-height: 43px;
   }
   
@@ -1138,67 +1138,161 @@ body {
 
 /*services-container*/
 .services-container {
-
-  .carousel-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    position: relative;
-    overflow: hidden;
+  .section-title {
+    text-align: center;
+    background: var(--gradient-light, linear-gradient(180deg, #e7f6f4 0%, #c6e7e2 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font: 600 60px "fontspring", -apple-system, Roboto, Helvetica, sans-serif;
   }
-
-  .carousel-wrapper {
+  .annotation-grid {
     display: flex;
-    transition: transform 0.3s ease-in-out;
+    gap: 20px;
+    border-radius: 35px;
+    position: relative;
   }
-
-  .carousel-card {
-    flex: 0 0 calc(33.333% - 20px);
-    margin: 0 10px;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-  }
-
-  .card-image {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-  }
-
-  .card-content {
-    padding: 20px;
-  }
-
-  .card-title {
-    font-size: 18px;
-    margin: 0 0 10px;
-  }
-
-  .card-description {
-    font-size: 14px;
-    color: #666;
-  }
-
+  
   .carousel-button {
+    display: none;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    border: none;
-    padding: 10px 15px;
+    border-radius: 19px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 7px 17px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    justify-content: center;
+    width: 62px;
+    height: 62px;
+    padding: 12px;
+    border: 2px solid rgba(0, 0, 0, 0.15);
     cursor: pointer;
-    font-size: 18px;
-    border-radius: 4px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    z-index: 2;
+    font-size: 22px;
   }
-
-  .prev-button {
+  
+  .carousel-button.prev {
     left: 10px;
   }
-
-  .next-button {
+  
+  .carousel-button.next {
     right: 10px;
+  }
+  
+  .carousel-container {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+  }
+  
+  .carousel-indicators {
+    display: none;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .indicator {
+    min-width: 30px;
+    max-width: 60px;
+    height: 10px;
+    background: #ccc;
+    cursor: pointer;
+    background: #C7F6EC;
+    border: #C7F6EC;
+  }
+
+  .indicator:first-of-type{
+    border-top-left-radius: 25%;
+    border-bottom-left-radius: 25%;
+  }
+  
+  .indicator:last-of-type{
+    border-top-right-radius: 25%;
+    border-bottom-right-radius: 25%;
+  }
+  .indicator.active {
+    background: #03C39A;
+  }
+  
+  .annotation-item {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 20%;
+    flex-shrink: 0;
+  }
+  
+  .annotation-card {
+    border-radius: 35px;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    overflow: hidden;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font: 600 32px "fontspring", -apple-system, Roboto, Helvetica, sans-serif;
+    border: 1px solid rgb(255, 255, 255);
+  }
+  
+  .annotation-image {
+    aspect-ratio: 1.14;
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+  }
+  
+  .annotation-label {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 3.417;
+    padding: 30px;
+  }
+  
+  .annotation-background {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .annotation-text {
+    position: relative;
+  }
+  
+  @media (max-width: 991px) {
+    .carousel-button {
+      display: block;
+    }
+  
+    .carousel-indicators {
+      display: flex;
+    }
+  
+    .carousel-container {
+      margin: 0 18px;
+      overflow: hidden;
+      scroll-behavior: smooth;
+      scroll-snap-type: x mandatory;
+    }
+  
+    .annotation-item {
+      width: 100%;
+      scroll-snap-align: start;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .carousel-container{
+      justify-content: center;
+    }
   }
 }
 
@@ -1344,7 +1438,7 @@ body {
 
   .contact-heading {
     color: #203e40;
-    font: 650 46px/1 "fontsprnig", -apple-system, Roboto, Helvetica, sans-serif;
+    font: 650 46px/1 "fontspring", -apple-system, Roboto, Helvetica, sans-serif;
   }
 
   @media (max-width: 991px) {
