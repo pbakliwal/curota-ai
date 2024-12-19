@@ -1,0 +1,235 @@
+.hero-container-2 {
+  min-height: 660px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .content-section {
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 37px;
+    margin-bottom: 130px;
+  }
+
+  img {
+    height: 140px;
+    margin-top: 230px;
+  }
+  .heading {
+    font-family: "fontspring";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 65px;
+    color: #000000;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 0;
+  }
+
+  .paragraph {
+    font-family: "Helvetica Neue";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #000000;
+  }
+}
+
+.about-us-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 90px;
+    margin-top: 62px;
+    margin-bottom: 62px;
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    padding: 0px;
+    gap: 89px 43.251px;
+    max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .profile-card {
+    background: linear-gradient(180deg, #e7f6f4 0%, #c6e7e2 100%);
+    box-shadow: 0px 3.15272px 11.0345px rgba(0, 0, 0, 0.07);
+    backdrop-filter: blur(11.8227px);
+    border-radius: 31.5272px;
+    display: flex;
+    min-width: 240px;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    flex-grow: 1;
+    width: 400px;
+    padding: 38px 0;
+  }
+
+  .avatar-wrapper {
+    border-radius: 72px;
+    background-color: rgba(32, 62, 64, 1);
+    display: flex;
+    width: 182px;
+    height: 182px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .avatar {
+    aspect-ratio: 1;
+    object-fit: contain;
+    height: 182px;
+  }
+
+  .name-container {
+    align-self: stretch;
+    display: flex;
+    margin-top: 39px;
+    align-items: center;
+    gap: 5px;
+    color: rgba(32, 62, 64, 1);
+    text-transform: uppercase;
+    justify-content: space-between;
+    font: 600 38px/1 "fontspring", -apple-system, Roboto, Helvetica, sans-serif;
+  }
+
+  .name-decoration {
+    aspect-ratio: 47.62;
+    object-fit: contain;
+    width: 64px;
+    align-self: stretch;
+    margin: auto 0;
+  }
+
+  .name {
+    align-self: stretch;
+    flex-grow: 1;
+    width: 100%;
+    text-align: center;
+  }
+
+  .profile-description {
+    color: rgba(32, 62, 64, 1);
+    text-align: center;
+    margin-top: 47px;
+    font: 400 18px/22px "Helvetica Neue", sans-serif;
+  }
+
+  .location-wrapper {
+    display: flex;
+    margin-top: 39px;
+    width: 199px;
+    max-width: 100%;
+    gap: 5px;
+    color: rgba(0, 0, 0, 1);
+    font: 500 22px/1 "Helvetica Neue", -apple-system, Roboto, Helvetica,
+      sans-serif;
+  }
+
+  .location-icon {
+    aspect-ratio: 1;
+    object-fit: contain;
+    width: 28px;
+  }
+
+  .location-text {
+    flex-grow: 1;
+    width: 160px;
+    margin: auto 0;
+  }
+
+  .role-badge {
+    border-radius: 158px;
+    background-color: rgba(32, 62, 64, 1);
+    margin-top: 19px;
+    width: 358px;
+    max-width: 100%;
+    overflow: hidden;
+    color: rgba(198, 231, 226, 1);
+    text-transform: uppercase;
+    padding: 22px;
+    font: 700 21px/1 "Helvetica Neue", -apple-system, Roboto, Helvetica,
+      sans-serif;
+  }
+
+  .text-style-primary {
+    font-family: "Helvetica Neue", -apple-system, Roboto, Helvetica, sans-serif;
+  }
+
+  .text-style-bold {
+    font-family: "Helvetica Neue", -apple-system, Roboto, Helvetica, sans-serif;
+    font-weight: 700;
+  }
+
+  @media (max-width: 991px) {
+    .profile-card {
+      max-width: 100%;
+    }
+
+    .profile-description {
+      margin-top: 40px;
+    }
+
+    .role-badge {
+      padding-left: 20px;
+    }
+  }
+}
+
+.back-button {
+    display: flex;
+    align-items: center;
+    gap: 21px;
+    justify-content: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 35px 70px;
+    border-radius: 25px;
+    color: rgba(32, 62, 64, 1);
+    font: 600 45px "fontspring", -apple-system, Roboto, Helvetica, sans-serif;
+    background: linear-gradient(180deg, #e7f6f4 0%, #c6e7e2 100%);
+        box-shadow: 0px 3.15272px 11.0345px rgba(0, 0, 0, 0.07);
+        backdrop-filter: blur(11.8227px);
+        border-radius: 31.5272px;
+  }
+  
+  .back-button:focus {
+    outline: 2px solid rgba(32, 62, 64, 1);
+    outline-offset: 2px;
+  }
+  
+  .back-icon {
+    aspect-ratio: 1.05;
+    object-fit: contain;
+    object-position: center;
+    width: 41px;
+  }
+  
+  .back-text {
+    margin: auto 0;
+  }
+  
+  @media (max-width: 768px) {
+    .back-button {
+      padding: 25px 40px;
+      font-size: 35px;
+    }
+    
+    .back-icon {
+      width: 32px;
+    }
+  }

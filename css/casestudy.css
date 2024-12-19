@@ -1,0 +1,225 @@
+.case-study-section{
+    .insurance-container {
+        border-radius: 20px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        padding: 94px 0;
+      }
+      
+      .content-wrapper {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        padding: 0 56px;
+      }
+      
+      .section-title {
+        color: #000;
+        text-align: center;
+        align-self: start;
+        font: 600 60px "fontspring", sans-serif;
+      }
+      
+      .section-description {
+        color: #000;
+        margin: 27px 11px 0 0;
+        font: 400 24px/32px "Helvetica Neue", sans-serif;
+      }
+      
+      .feature-grid {
+        margin-top: 53px;
+        display: flex;
+        gap: 20px;
+      }
+      
+      .feature-card {
+        border-radius: 20px;
+        background-color: #E5F5F3;
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+        overflow: hidden;
+        align-items: center;
+        padding: 50px 80px 206px;
+      }
+      
+      .feature-icon {
+        border-radius: 20px;
+        background-color: rgba(32, 62, 64, 0.5);
+        width: 136px;
+        height: 67px;
+      }
+      
+      .metrics-container {
+        border-radius: 35px;
+        background-color: #203E40;
+        margin: 71px auto 0;
+        width: 1194px;
+        max-width: 100%;
+        padding: 69px 80px;
+      }
+      
+      .metrics-content {
+        display: flex;
+        gap: 20px;
+      }
+      
+      .metrics-intro {
+        width: 44%;
+      }
+      
+      .metrics-title {
+        color: #E5F5F3;
+        font: 600 66px/1 "fontspring", sans-serif;
+      }
+      
+      .metrics-description {
+        margin-top: 19px;
+        color: #fff;
+        letter-spacing: -0.21px;
+        font: 400 21px/29px fontspring, sans-serif;
+      }
+      
+      .metrics-grid {
+        width: 56%;
+      }
+      
+      .metric-item {
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .metric-value {
+        color: #E5F5F3;
+        font: 700 63px/1.2 Inter, sans-serif;
+        letter-spacing: -1.26px;
+      }
+      
+      .metric-label {
+        color: #fff;
+        font: 400 24px/1.4 Inter, sans-serif;
+        letter-spacing: -0.24px;
+      }
+      
+      .testimonials-section {
+        margin-top: 76px;
+        width: 100%;
+        max-width: 1389px;
+      }
+      
+      .testimonial-card {
+        border-radius: 23px;
+        background-color: #fff;
+        box-shadow: -2px 3px 17px rgba(0, 0, 0, 0.12);
+        padding: 26px;
+      }
+      
+      .testimonial-header {
+        display: flex;
+        gap: 20px;
+      }
+      
+      .testimonial-image {
+        width: 113px;
+        border-radius: 13px;
+      }
+      
+      .testimonial-author {
+        color: #203E40;
+        font: 650 36px/1 "FONTSPRING DEMO - All Round Gothic Semi", sans-serif;
+      }
+      
+      .testimonial-role {
+        color: #203E40;
+        font: 600 27px/1 "fontspring", sans-serif;
+        margin-top: 18px;
+      }
+      
+      .testimonial-content {
+        color: #203E40;
+        letter-spacing: -0.24px;
+        font: 400 24px/32px fontspring, sans-serif;
+        margin-top: 25px;
+      }
+      
+      .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        border: 0;
+      }
+      
+      @media (max-width: 991px) {
+        .insurance-container {
+          padding-top: 100px;
+        }
+        
+        .content-wrapper {
+          max-width: 100%;
+          padding: 0 20px;
+        }
+        
+        .section-title {
+          font-size: 40px;
+        }
+        
+        .section-description {
+          max-width: 100%;
+          margin-right: 10px;
+        }
+        
+        .feature-grid {
+          flex-direction: column;
+        }
+        
+        .feature-card {
+          max-width: 100%;
+          margin-top: 40px;
+          padding: 0 20px 100px;
+        }
+        
+        .metrics-container {
+          margin-top: 40px;
+          padding: 0 20px;
+        }
+        
+        .metrics-content {
+          flex-direction: column;
+        }
+        
+        .metrics-intro,
+        .metrics-grid {
+          width: 100%;
+          margin-top: 40px;
+        }
+        
+        .metrics-title {
+          font-size: 40px;
+        }
+        
+        .testimonials-section {
+          max-width: 100%;
+          margin-top: 40px;
+        }
+        
+        .testimonial-card {
+          max-width: 100%;
+          margin-top: 29px;
+          padding-left: 20px;
+        }
+        
+        .testimonial-header {
+          flex-direction: column;
+        }
+        
+        .testimonial-image {
+          margin-top: 32px;
+        }
+      }
+}

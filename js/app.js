@@ -43,68 +43,61 @@ window.onscroll = function() {
 
 /* carousel js*/
 document.addEventListener('DOMContentLoaded', function() {
-  const container = document.querySelector('.carousel-container');
-  const items = document.querySelectorAll('.annotation-item');
-  const prevBtn = document.querySelector('.carousel-button.prev');
-  const nextBtn = document.querySelector('.carousel-button.next');
-  const indicators = document.querySelector('.carousel-indicators');
+  const container = document.querySelector('.cards-container');
+  const cards = container.children;
+  const prevBtn = document.querySelector('.prev');
+  const nextBtn = document.querySelector('.next');
+  const progressBar = document.querySelector('.progress-bar');
+  
   let currentIndex = 0;
-
-  function createIndicators() {
-    items.forEach((_, index) => {
-      const button = document.createElement('button');
-      button.classList.add('indicator');
-      button.setAttribute('role', 'tab');
-      button.setAttribute('aria-label', `Slide ${index + 1}`);
-      button.onclick = () => goToSlide(index);
-      indicators.appendChild(button);
-    });
-    updateIndicators();
-  }
-
-  function updateIndicators() {
-    const dots = document.querySelectorAll('.indicator');
-    dots.forEach((dot, index) => {
-      dot.classList.toggle('active', index === currentIndex);
-      dot.setAttribute('aria-selected', index === currentIndex);
+  const totalSlides = cards.length;
+  const slideWidth = cards[0].offsetWidth + 25;
+  
+  function updateCarousel() {
+    container.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    const progress = ((currentIndex + 1) / totalSlides) * 100;
+    progressBar.style.width = `${progress}%`;
+    progressBar.setAttribute('aria-valuenow', progress);
+    
+    Array.from(cards).forEach((card, index) => {
+      card.setAttribute('aria-hidden', index !== currentIndex);
     });
   }
-
-  function goToSlide(index) {
-    currentIndex = index;
-    const offset = items[index].offsetLeft;
-    container.scrollTo({
-      left: offset,
-      behavior: 'smooth'
-    });
-    updateIndicators();
-  }
-
-  prevBtn.onclick = () => {
-    currentIndex = (currentIndex - 1 + items.length) % items.length;
-    goToSlide(currentIndex);
-  };
-
-  nextBtn.onclick = () => {
-    currentIndex = (currentIndex + 1) % items.length;
-    goToSlide(currentIndex);
-  };
-
-  container.addEventListener('scroll', () => {
-    const index = Math.round(container.scrollLeft / container.offsetWidth);
-    if (currentIndex !== index) {
-      currentIndex = index;
-      updateIndicators();
+  
+  function moveNext() {
+    if (currentIndex < totalSlides - 1) {
+      currentIndex++;
+      updateCarousel();
     }
-  });
-
-  createIndicators();
-
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'ArrowLeft') {
-      prevBtn.click();
-    } else if (e.key === 'ArrowRight') {
-      nextBtn.click();
+  }
+  
+  function movePrev() {
+    if (currentIndex > 0) {
+      currentIndex--;
+      updateCarousel();
     }
+  }
+  
+  nextBtn.addEventListener('click', moveNext);
+  prevBtn.addEventListener('click', movePrev);
+  
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'ArrowLeft') movePrev();
+    if (e.key === 'ArrowRight') moveNext();
   });
+  
+  let touchStartX = 0;
+  let touchEndX = 0;
+  
+  container.addEventListener('touchstart', e => {
+    touchStartX = e.changedTouches[0].screenX;
+  });
+  
+  container.addEventListener('touchend', e => {
+    touchEndX = e.changedTouches[0].screenX;
+    if (touchStartX - touchEndX > 50) moveNext();
+    if (touchStartX - touchEndX < -50) movePrev();
+  });
+  
+  updateCarousel();
 });
