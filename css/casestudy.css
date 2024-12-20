@@ -54,53 +54,129 @@
       
       .metrics-container {
         border-radius: 35px;
-        background-color: #203E40;
-        margin: 71px auto 0;
-        width: 1194px;
-        max-width: 100%;
+        background-color: rgba(32, 62, 64, 1);
         padding: 69px 80px;
+        overflow: hidden;
+        margin-top: 71px;
+        margin-bottom: 71px;
       }
       
-      .metrics-content {
+      .metrics-grid {
         display: flex;
         gap: 20px;
       }
       
       .metrics-intro {
+        display: flex;
+        flex-direction: column;
+        line-height: normal;
         width: 44%;
       }
       
-      .metrics-title {
-        color: #E5F5F3;
-        font: 600 66px/1 "fontspring", sans-serif;
+      .metrics-content {
+        display: flex;
+        flex-direction: column;
+        align-self: stretch;
+        margin: auto 0;
+      }
+      
+      .metrics-heading {
+        min-height: 43px;
+        color: rgba(229, 245, 243, 1);
+        font: 600 66px/1 "fontspring", -apple-system, Roboto, sans-serif;
       }
       
       .metrics-description {
         margin-top: 19px;
-        color: #fff;
+        height: 85px;
+        width: 272px;
+        max-width: 100%;
+        color: rgba(255, 255, 255, 1);
         letter-spacing: -0.21px;
-        font: 400 21px/29px fontspring, sans-serif;
+        font: 400 21px/29px "fontspring", sans-serif;
+        overflow: hidden;
       }
       
-      .metrics-grid {
+      .metrics-data {
+        display: flex;
+        flex-direction: column;
         width: 56%;
+      }
+      
+      .metrics-row {
+        display: flex;
+        gap: 20px;
+      }
+      
+      .metrics-row:last-child {
+        margin-top: 66px;
       }
       
       .metric-item {
         display: flex;
+        height: 108px;
         flex-direction: column;
+        overflow: hidden;
+        font-family: "Helvetica Neue", sans-serif;
+        width: 50%;
       }
       
       .metric-value {
-        color: #E5F5F3;
-        font: 700 63px/1.2 Inter, sans-serif;
+        color: rgba(229, 245, 243, 1);
+        font-size: 63px;
+        font-weight: 700;
+        line-height: 1.2;
         letter-spacing: -1.26px;
       }
       
       .metric-label {
-        color: #fff;
-        font: 400 24px/1.4 Inter, sans-serif;
+        color: rgba(255, 255, 255, 1);
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 1.4;
         letter-spacing: -0.24px;
+      }
+      
+      @media (max-width: 991px) {
+        .metrics-container {
+          padding: 0 20px;
+        }
+      
+        .metrics-grid {
+          flex-direction: column;
+          align-items: stretch;
+          gap: 0;
+        }
+      
+        .metrics-intro {
+          width: 100%;
+        }
+      
+        .metrics-content {
+          margin-top: 40px;
+        }
+      
+        .metrics-heading {
+          font-size: 40px;
+        }
+      
+        .metrics-data {
+          width: 100%;
+          margin-top: 40px;
+        }
+      
+        .metrics-row {
+          flex-direction: column;
+        }
+      
+        .metric-item {
+          width: 100%;
+          margin-top: 40px;
+        }
+      
+        .metric-value {
+          font-size: 40px;
+        }
       }
       
       .testimonials-section {
