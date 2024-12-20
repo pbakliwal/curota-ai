@@ -299,3 +299,329 @@
         }
       }
 }
+
+/*banner bottom*/
+.frame-274,
+.frame-274 * {
+  box-sizing: border-box;
+}
+.frame-274 {
+  background: #ffffff;
+  border-radius: 34px;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 0.1px;
+  height: 367px;
+  position: relative;
+  box-shadow: -4px 3px 31px 0px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 808px;
+    top: -100px;
+    left: 25%;
+}
+.frame-275 {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 335px;
+  position: absolute;
+  left: 115px;
+  top: 61px;
+}
+.introduction {
+  color: rgba(32, 62, 64, 0.7);
+  text-align: left;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  position: relative;
+  align-self: stretch;
+}
+.why-curota-for-insurance {
+  color: rgba(32, 62, 64, 0.7);
+  text-align: left;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  position: relative;
+  align-self: stretch;
+}
+.metrics-increased-for-xyz {
+  color: rgba(32, 62, 64, 0.7);
+  text-align: left;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  position: relative;
+  align-self: stretch;
+}
+.follow-up-targets {
+  color: rgba(32, 62, 64, 0.7);
+  text-align: left;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  position: relative;
+  align-self: stretch;
+}
+.conclusion {
+  color: rgba(32, 62, 64, 0.7);
+  text-align: left;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  position: relative;
+  align-self: stretch;
+}
+.client-testimonials {
+  color: rgba(32, 62, 64, 0.7);
+  text-align: left;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  position: relative;
+  align-self: stretch;
+}
+.group-482032 {
+  position: absolute;
+  inset: 0;
+}
+.line-29 {
+  margin-top: -2px;
+  border-style: solid;
+  border-color: rgba(32, 62, 64, 0.24);
+  border-width: 2px 0 0 0;
+  width: 220px;
+  height: 0px;
+  position: absolute;
+  left: 65px;
+  top: 72px;
+  transform-origin: 0 0;
+  transform: rotate(90deg) scale(1, 1);
+}
+.frame-482361 {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  align-items: flex-start;
+  justify-content: center;
+  position: absolute;
+  left: 52px;
+  top: 66px;
+}
+.group-482034 {
+  flex-shrink: 0;
+  width: 27px;
+  height: 27px;
+  position: static;
+}
+.ellipse-9 {
+  background: #c6e7e2;
+  border-radius: 50%;
+  width: 27px;
+  height: 27px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.ellipse-16 {
+  background: #203e40;
+  border-radius: 50%;
+  width: 9px;
+  height: 9px;
+  position: absolute;
+  left: 9px;
+  top: 9px;
+}
+.frame-482362 {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  align-items: flex-start;
+  justify-content: center;
+  position: absolute;
+  left: 52px;
+  top: 66px;
+}
+.frame-4823612 {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-4823622 {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-482363 {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-482364 {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-482365 {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-4823623 {
+  border-radius: 20px;
+  border-style: solid;
+  border-color: rgba(32, 62, 64, 0.2);
+  border-width: 1px;
+  width: 312px;
+  height: 120px;
+  position: absolute;
+  left: 454px;
+  top: 51px;
+  box-shadow: 0px 4px 11px 0px rgba(0, 0, 0, 0.07);
+  overflow: hidden;
+}
+.reading-time {
+  color: #000000;
+  text-align: left;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  top: 20px;
+}
+.frame-4823642 {
+  display: flex;
+  flex-direction: row;
+  gap: 11.72px;
+  align-items: center;
+  justify-content: flex-start;
+  width: 165px;
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  top: 64px;
+}
+.mingcute-time-fill {
+  flex-shrink: 0;
+  width: 31px;
+  height: 31px;
+  position: relative;
+  overflow: hidden;
+}
+.group {
+  width: 83.33%;
+  height: 90.89%;
+  position: absolute;
+  right: 8.34%;
+  left: 8.33%;
+  bottom: 0.78%;
+  top: 8.33%;
+  overflow: visible;
+}
+._10-mins {
+  color: rgba(32, 62, 64, 0.7);
+  text-align: left;
+  font-family: "fontspring", sans-serif;
+  font-size: 29.09208106994629px;
+  font-weight: 400;
+  text-transform: uppercase;
+  position: relative;
+  width: 226.68px;
+}
+.group-482033 {
+  position: absolute;
+  inset: 0;
+}
+.frame-4823643 {
+  background: #ffffff;
+  border-radius: 20px;
+  border-style: solid;
+  border-color: rgba(32, 62, 64, 0.2);
+  border-width: 1px;
+  width: 307px;
+  height: 120px;
+  position: absolute;
+  left: 450px;
+  top: 203px;
+  box-shadow: 0px 4px 11px 0px rgba(0, 0, 0, 0.07);
+  overflow: hidden;
+}
+.frame-4823632 {
+  background: #e5f5f3;
+  border-radius: 20px;
+  border-style: solid;
+  border-color: rgba(32, 62, 64, 0.2);
+  border-width: 1px;
+  width: 307px;
+  height: 120px;
+  position: absolute;
+  left: 459px;
+  top: 194px;
+  box-shadow: 0px 4px 11px 0px rgba(0, 0, 0, 0.07);
+  overflow: hidden;
+}
+.jump-to {
+  color: #000000;
+  text-align: left;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  position: absolute;
+  left: 112px;
+  top: 20px;
+}
+.frame-4823644 {
+  display: flex;
+  flex-direction: row;
+  gap: 11.72px;
+  align-items: center;
+  justify-content: flex-start;
+  width: 249px;
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  top: 62px;
+}
+.polygon-4 {
+  border-radius: 0px;
+  flex-shrink: 0;
+  width: 28.85px;
+  height: 28.85px;
+  position: relative;
+  overflow: visible;
+}
+.testimonials {
+  color: rgba(32, 62, 64, 0.7);
+  text-align: left;
+  font-family: "fontspring", sans-serif;
+  font-size: 29.09208106994629px;
+  font-weight: 400;
+  text-transform: uppercase;
+  position: relative;
+  width: 226.68px;
+}
