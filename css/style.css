@@ -1149,11 +1149,7 @@ body {
     .features-container {
       justify-content: space-around;
       margin-bottom: 40px;
-    }
-  }
-  @media (max-width: 1024px) {
-    .features-container {
-      justify-content: space-evenly;
+      gap: 20px;
     }
   }
 
@@ -1195,26 +1191,40 @@ body {
       margin-top: 70px;
     }
 
+    @media (max-width:991px) {
+      .footer-paragraph {
+      margin-top: 20px;
+      font-size: 12px;
+      }
+    }
+
     .read-more {
       background: rgba(32, 62, 64, 0.2);
       border-radius: 20px;
       height: 64px;
+      margin-top: 70px;
+      padding: 23px 64px;
+      border-radius: 20px;
+      display: contents;
 
       a {
-        border-radius: 20px;
-        background-color: rgba(32, 62, 64, 0.2);
-        align-self: stretch;
-        display: flex;
-        margin-top: 70px;
         width: 100%;
-        flex-direction: column;
-        overflow: hidden;
-        justify-content: center;
-        padding: 23px 64px;
         color: #203e40;
         text-align: center;
         font-weight: 700;
         text-decoration: underline;
+        margin: 0;
+      }
+    }
+
+    @media (max-width:991px){
+      .read-more{
+        height: 48px;
+        margin-top: 10px;
+
+        a{
+          font-size: 14px;
+        }
       }
     }
   }
@@ -1227,6 +1237,16 @@ body {
   .feature-card:hover .back {
     transform: rotateY(0deg);
     display: block;
+  }
+
+  @media (max-width:991px){
+    .feature-card{
+      min-height: 200px;
+      padding: 5px;
+    }
+    .feature-image{
+      height: 150px;
+    }
   }
 }
 
@@ -1759,6 +1779,8 @@ body {
   .green-background{
     padding-left: 15px;
     padding-right: 15px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }
 .background-img-container {
@@ -2212,9 +2234,6 @@ body {
     margin-bottom: 0;
   }
   @media (max-width: 991px) {
-    .welcometo-section {
-      padding: 0 20px 100px;
-    }
     .header-container {
       max-width: 100%;
       margin-right: 9px;
@@ -2230,17 +2249,17 @@ body {
     }
     .welcometo-content {
       max-width: 100%;
-      margin-top: 25px;
     }
     .welcometo-header {
-      font-size: 40px;
+      font-size: 31px;
     }
-    .welcometo-text {
-      font-size: 40px;
+    .welcometo-text,.welcometo-text-dash {
+      font-size: 31px;
     }
     .tagline {
       max-width: 100%;
-      margin-right: 9px;
+      margin-top: 18px;
+      font-size: 14px;
     }
     .features-grid {
       margin-top: 40px;
@@ -2263,13 +2282,14 @@ body {
     .benefit-card {
       max-width: 100%;
     }
-    .benefit-card {
-      padding: 0 20px;
+    .logo{
+      min-width: 150px;
+      width: 150px;
     }
   }
   @media (max-width: 640px) {
     .feature-card {
-      margin-bottom: -4px;
+      width: 100%;
     }
   }
 }
@@ -2428,4 +2448,16 @@ border-radius: 18.6565px;
   .progress-container {
     margin-top: 40px;
   }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }

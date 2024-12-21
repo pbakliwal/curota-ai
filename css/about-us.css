@@ -50,6 +50,7 @@
     gap: 90px;
     margin-top: 62px;
     margin-bottom: 62px;
+    padding: 15px;
   .row {
     display: flex;
     flex-direction: row;
@@ -75,6 +76,8 @@
     flex-grow: 1;
     width: 400px;
     padding: 38px 0;
+    min-height: 750px;
+    padding: 5px;
   }
 
   .avatar-wrapper {
@@ -131,24 +134,19 @@
   .location-wrapper {
     display: flex;
     margin-top: 39px;
-    width: 199px;
+    width: 100%;
     max-width: 100%;
     gap: 5px;
     color: rgba(0, 0, 0, 1);
     font: 500 22px/1 "Helvetica Neue", -apple-system, Roboto, Helvetica,
       sans-serif;
+      justify-content: center;
   }
 
   .location-icon {
     aspect-ratio: 1;
     object-fit: contain;
     width: 28px;
-  }
-
-  .location-text {
-    flex-grow: 1;
-    width: 160px;
-    margin: auto 0;
   }
 
   .role-badge {
@@ -161,8 +159,8 @@
     color: rgba(198, 231, 226, 1);
     text-transform: uppercase;
     padding: 22px;
-    font: 700 21px/1 "Helvetica Neue", -apple-system, Roboto, Helvetica,
-      sans-serif;
+    font: 700 21px/1 "Helvetica Neue", -apple-system, Roboto, Helvetica, sans-serif;
+      text-align: center;
   }
 
   .text-style-primary {
@@ -221,6 +219,11 @@
   
   .back-text {
     margin: auto 0;
+
+    a{
+      text-decoration: none;
+      color: rgba(32, 62, 64, 1);
+    }
   }
   
   @media (max-width: 768px) {
