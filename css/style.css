@@ -2008,7 +2008,7 @@ body {
   .welcometo-header {
     display: flex;
     align-items: center;
-    gap: 18px;
+    gap: 12px;
     font-size: 64px;
     font-weight: 400;
     justify-content: center;
