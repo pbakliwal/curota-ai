@@ -2134,7 +2134,8 @@ body {
   .why-section {
     display: flex;
     margin-top: 37px;
-    width: 379px;
+   /* width: 379px; */
+    width: 330px;
     max-width: 100%;
     flex-direction: column;
     justify-content: start;
@@ -2296,7 +2297,8 @@ body {
 
 /*carousel*/
 .case-studies-wrapper {
-  display: flex;
+ /* display: flex; */
+  display: none;
   flex-direction: column;
   overflow: hidden;
   position: relative;
