@@ -152,7 +152,6 @@ body {
       display: none;
     }
 
-
     .nav-wrapper {
       margin: 0 10px;
     }
@@ -311,17 +310,13 @@ body {
     font: 600 48px fontspring, -apple-system, Roboto, Helvetica, sans-serif;
   }
 
-  @media (max-width: 991px) {
+  @media (max-width: 1024px) {
     .main-heading {
       max-width: 100%;
-      font-size: 40px;
+      font-size: 32px;
     }
-  }
-
-  @media (max-width: 991px) {
     .description {
       max-width: 100%;
-      margin-right: 10px;
     }
   }
 
@@ -345,7 +340,7 @@ body {
     flex-direction: column;
     line-height: normal;
     width: 60%;
-    margin-left: 80px;
+    margin-left: 20px;
   }
 
   @media (max-width: 991px) {
@@ -353,6 +348,7 @@ body {
       width: 100%;
     }
   }
+
 
   .image-container {
     display: flex;
@@ -427,6 +423,7 @@ body {
 
     .video-container {
       margin-top: 40px;
+      height: 400px;
     }
 
     .main-heading {
@@ -467,6 +464,11 @@ body {
     box-shadow: 0px 6px 11px 6px rgba(0, 0, 0, 0.05);
     overflow: hidden;
     backdrop-filter: blur(6px);
+
+    @media(max-width:768px) {
+      width: 345px;
+      height: 345px;
+    }
   }
   .frame-482384 {
     background: rgba(255, 255, 255, 0.2);
@@ -482,6 +484,11 @@ body {
     box-shadow: 0px 6px 11px 6px rgba(0, 0, 0, 0.05);
     overflow: hidden;
     backdrop-filter: blur(6px);
+
+    @media(max-width:768px) {
+      width: 345px;
+      height: 345px;
+    }
   }
   .frame-482386 {
     background: rgba(255, 255, 255, 0.2);
@@ -497,6 +504,11 @@ body {
     box-shadow: 0px 6px 11px 6px rgba(0, 0, 0, 0.05);
     overflow: hidden;
     backdrop-filter: blur(6px);
+
+    @media(max-width:768px) {
+      width: 345px;
+      height: 345px;
+    }
   }
   .frame-482387 {
     background: rgba(255, 255, 255, 0.2);
@@ -512,6 +524,11 @@ body {
     box-shadow: 0px 6px 11px 6px rgba(0, 0, 0, 0.05);
     overflow: hidden;
     backdrop-filter: blur(6px);
+
+    @media(max-width:768px) {
+      width: 345px;
+      height: 345px;
+    }
   }
   .screenshot-2024-11-13-at-5-44-51-pm-1 {
     border-style: solid;
@@ -578,6 +595,10 @@ body {
     position: absolute;
     left: 586px;
     top: 23px;
+
+    @media(max-width:768px){
+      left: 70%;
+    }
   }
   .frame-482388 {
     display: flex;
@@ -1790,6 +1811,10 @@ body {
   width: 100%;
   height: 100%;
   border-radius: inherit; /* Match container border radius */
+
+  @media(max-width:768px){
+    width: auto;
+  }
 }
 
 .rotating-border {
@@ -1805,11 +1830,20 @@ body {
   stroke-dashoffset: 0;
   animation: dash-move 9s linear infinite;
   transition: stroke-dashoffset 2s linear;
+
+  @media(max-width:768px) {
+    top:-20%;
+  }
 }
 
 .rotating-border-rect{
   height: 84%;
   width: 95%;
+
+  @media(max-width:768px) {
+    height: 130%;
+    width: 95%;
+  }
 }
 
 @keyframes dash-move {
