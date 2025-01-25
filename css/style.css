@@ -22,6 +22,7 @@ body {
   .nav-container {
     display: flex;
     flex-direction: column;
+    width: 90%;
     max-width: 1300px;
     margin: auto;
   }
@@ -38,23 +39,17 @@ body {
   @media (max-width: 991px) {
     .nav-wrapper {
       max-width: 100%;
-      padding: 0 20px;
+      padding: 20px;
     }
   }
 
   .nav-content {
     display: flex;
     width: 100%;
-    gap: 20px;
     flex-wrap: wrap;
     justify-content: space-between;
   }
 
-  @media (max-width: 991px) {
-    .nav-content {
-      max-width: 100%;
-    }
-  }
 
   .logo-container {
     display: flex;
@@ -157,9 +152,6 @@ body {
       display: none;
     }
 
-    .nav-content {
-      padding: 20px;
-    }
 
     .nav-wrapper {
       margin: 0 10px;
