@@ -15,7 +15,7 @@ body {
 
 .nav-container-0 {
   position: absolute;
-  top: 30px;
+  top: 20px;
   width: 100%;
   z-index: 1;
 
@@ -1815,6 +1815,11 @@ body {
   transition: stroke-dashoffset 2s linear;
 }
 
+.rotating-border-rect{
+  height: 84%;
+  width: 95%;
+}
+
 @keyframes dash-move {
   0%,
   40% {
@@ -1844,11 +1849,10 @@ body {
 /*sticky nav bar*/
 .sticky {
   position: fixed;
-  top: 0;
+  top: 20px;
   right: 0;
   left: 0;
   z-index: 1030;
-  background-color: #203e40;
 }
 
 /*metrics-container*/

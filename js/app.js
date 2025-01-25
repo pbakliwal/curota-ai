@@ -31,15 +31,45 @@ document.getElementById('emailForm').addEventListener('submit', function (event)
 });
 
 let menu = document.getElementById('menu');
-let offset = menu.offsetHeight;
+let heroSection = document.querySelector('.hero-container-1');
+let heroOffset = heroSection.offsetHeight;
+let lastScrollY = window.scrollY;
+let isSticky = false;
+let stickyTimeout;
 
 window.onscroll = function() {
-    if (window.scrollY > offset-10) {
+    let currentScrollY = window.scrollY;
+
+    if (currentScrollY > heroOffset) {
+        if (currentScrollY < lastScrollY) {
+            // Scrolling up
+            if (!isSticky) {
+                menu.classList.add("sticky");
+                isSticky = true;
+                clearTimeout(stickyTimeout);
+                stickyTimeout = setTimeout(() => {
+                    if (window.scrollY > heroOffset) {
+                        menu.classList.remove("sticky");
+                        isSticky = false;
+                    }
+                }, 3000);
+            }
+        } else {
+            // Scrolling down
+            if (isSticky) {
+                menu.classList.remove("sticky");
+                isSticky = false;
+                clearTimeout(stickyTimeout);
+            }
+        }
+    } else {
         menu.classList.add("sticky");
-    } else if(window.scrollY < offset-20) {
-        menu.classList.remove("sticky");
+        isSticky = true;
+        clearTimeout(stickyTimeout);
     }
-}
+
+    lastScrollY = currentScrollY;
+};
 
 /* carousel js*/
 document.addEventListener('DOMContentLoaded', function() {
